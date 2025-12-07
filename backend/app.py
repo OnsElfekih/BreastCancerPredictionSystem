@@ -9,10 +9,9 @@ model = joblib.load("gradient_boosting_model.pkl")
 @app.route("/", methods=["GET", "POST"])
 def index():
     prediction = None
-    show_result = False  # variable pour contrôler l'affichage
+    show_result = False
 
     if request.method == "POST":
-        # Vérifier que tous les champs sont remplis
         try:
             age = float(request.form.get("age", ""))
             BMI = float(request.form.get("BMI", ""))
@@ -27,11 +26,10 @@ def index():
             X_new = np.array([[age, BMI, glucose, insulin, HOMA, leptin, adiponectin, resistin, MCP_1]])
             pred = model.predict(X_new)[0]
 
-            prediction = "saine" if pred == 0 else "Malade"
+            prediction = "saine" if pred == 0 else "malade"
             show_result = True
 
         except ValueError:
-            # Si conversion échoue, ne rien afficher
             prediction = None
             show_result = False
 

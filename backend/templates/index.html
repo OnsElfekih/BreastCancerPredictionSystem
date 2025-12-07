@@ -45,8 +45,8 @@
         </form>
 
 {% if show_result %}
-<div class="result {% if prediction == 'Patiente saine' %}saine{% else %}malade{% endif %}">
-    Patiente {{ prediction }}
+<div class="result {% if prediction == 'saine' %}saine{% else %}malade{% endif %}">
+    Résultat: Patiente {{ prediction }}
 </div>
 {% endif %}
 
