@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.ico') }}" class="logo" alt="Logo">
+        <h2>Breast Cancer Prediction</h2>
+        <form method="POST">
+            <div class="form-columns">
+                <div class="column">
+                    <label>Age:</label>
+                    <input type="number" name="age" step="any" required>
+
+                    <label>BMI:</label>
+                    <input type="number" name="BMI" step="any" required>
+
+                    <label>Glucose:</label>
+                    <input type="number" name="glucose" step="any" required>
+
+                    <label>Insulin:</label>
+                    <input type="number" name="insulin" step="any" required>
+
+                    <label>HOMA:</label>
+                    <input type="number" name="HOMA" step="any" required>
+                </div>
+                <div class="column">
+                    <label>Leptin:</label>
+                    <input type="number" name="leptin" step="any" required>
+
+                    <label>Adiponectin:</label>
+                    <input type="number" name="adiponectin" step="any" required>
+
+                    <label>Resistin:</label>
+                    <input type="number" name="resistin" step="any" required>
+
+                    <label>MCP_1:</label>
+                    <input type="number" name="MCP_1" step="any" required>
+                </div>
+            </div>
+            <button type="submit">Prédire</button>
+        </form>
+
+{% if show_result %}
+<div class="result {% if prediction == 'Patiente saine' %}saine{% else %}malade{% endif %}">
+    Patiente {{ prediction }}
+</div>
+{% endif %}
+
+
+    </div>
+</body>
+</html>
