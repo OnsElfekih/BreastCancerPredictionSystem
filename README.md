@@ -10,7 +10,7 @@ Web-based machine learning system that predicts if a patient’s tumor is benign
 - Includes preprocessing, model training, evaluation, and deployment.
 
 ## Project Structure
-
+```
 📁 backend
 ├─ 📝 main.py                     # Train model, cross-validation, save model
 ├─ 📝 app.py                      # Flask app for frontend
@@ -26,7 +26,7 @@ Web-based machine learning system that predicts if a patient’s tumor is benign
 
 📝 README.md                      # Project documentation
 
-
+```
 
 ## Prerequisites
 
@@ -68,6 +68,7 @@ cd BreastCancerPredictionSystem
 - Evaluate using accuracy, confusion matrix, and classification report.
 - Save the trained model for predictions.
 - Deploy the model using Flask with a web interface.
+
 
 
 
