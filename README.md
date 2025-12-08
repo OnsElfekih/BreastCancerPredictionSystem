@@ -48,13 +48,13 @@ cd BreastCancerPredictionSystem
 4. Install dependencies:
    pip install -r requirements.txt
    
-6. Usage
-   Run locally:
+5. Usage:
+   - Run locally:
    cd backend
    python app.py
-   Online Deployement: https://breastcancerpredictionsystem-k643.onrender.com/
+   - Online Deployement: https://breastcancerpredictionsystem-k643.onrender.com/
 
-7. Workflow:
+6. Workflow:
 - Load and inspect the dataset dataR2.csv.
 - Preprocess data and map target labels.
 - Split dataset into training and test sets.
@@ -62,4 +62,5 @@ cd BreastCancerPredictionSystem
 - Evaluate using accuracy, confusion matrix, and classification report.
 - Save the trained model for predictions.
 - Deploy the model using Flask with a web interface.
+
 
