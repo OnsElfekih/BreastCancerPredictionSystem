@@ -75,12 +75,12 @@ button:hover {
     font-weight: bold;
 }
 
-.saine {
+.healthy {
     color: green;
     font-weight: bold;
 }
 
-.malade {
+.sick {
     color: red;
     font-weight: bold;
 }

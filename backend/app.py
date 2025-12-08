@@ -26,7 +26,7 @@ def index():
             X_new = np.array([[age, BMI, glucose, insulin, HOMA, leptin, adiponectin, resistin, MCP_1]])
             pred = model.predict(X_new)[0]
 
-            prediction = "saine" if pred == 0 else "malade"
+            prediction = "healthy" if pred == 0 else "sick"
             show_result = True
 
         except ValueError:
