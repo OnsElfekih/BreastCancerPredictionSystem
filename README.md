@@ -11,15 +11,21 @@ Web-based machine learning system that predicts if a patient’s tumor is benign
 
 ## Project Structure
 
-/backend/ ← Flask application and model script
-├─ app.py ← Main Flask app for web interface
-├─ gradient_boosting_model.pkl ← Saved trained model
-└─ templates/
-└─ index.html ← Frontend form and result display
-/data/
-└─ dataR2.csv ← Dataset used for training
-requirements.txt ← Python dependencies
-README.md ← Project documentation
+📁 backend
+├─ 📝 main.py                     # Train model, cross-validation, save model
+├─ 📝 app.py                      # Flask app for frontend
+├─ 💾 gradient_boosting_model.pkl # Saved trained model
+├─ 📄 dataR2.csv                  # Dataset used for training
+├─ 📝 requirements.txt            # Python dependencies
+├─ 📂 templates
+│  └─ 🖥️ index.html               # Frontend form and result display
+├─ 📂 static
+│  ├─ 🖼️ logo.ico                 # Project logo
+│  └─ 🎨 style.css                # CSS styling
+└─ 📂 venv                        # Python virtual environment
+
+📝 README.md                      # Project documentation
+
 
 
 ## Prerequisites
@@ -62,5 +68,6 @@ cd BreastCancerPredictionSystem
 - Evaluate using accuracy, confusion matrix, and classification report.
 - Save the trained model for predictions.
 - Deploy the model using Flask with a web interface.
+
 
 
