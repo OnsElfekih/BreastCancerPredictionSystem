@@ -17,6 +17,7 @@ Web-based machine learning system that predicts if a patient’s tumor is benign
 ├─ 💾 gradient_boosting_model.pkl # Saved trained model
 ├─ 📄 dataR2.csv                  # Dataset used for training
 ├─ 📝 requirements.txt            # Python dependencies
+├─ 📊 ML.ipynb                    # ML notebook with Python code
 ├─ 📂 templates
 │  └─ 🖥️ index.html               # Frontend form and result display
 ├─ 📂 static
@@ -68,6 +69,7 @@ cd BreastCancerPredictionSystem
 - Evaluate using accuracy, confusion matrix, and classification report.
 - Save the trained model for predictions.
 - Deploy the model using Flask with a web interface.
+
 
 
 
