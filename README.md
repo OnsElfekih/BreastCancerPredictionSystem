@@ -11,21 +11,25 @@ Web-based machine learning system that predicts if a patient’s tumor is benign
 
 ## Project Structure
 ```
-📁 backend
-├─ 📝 main.py                     # Train model, cross-validation, save model
-├─ 📝 app.py                      # Flask app for frontend
-├─ 💾 gradient_boosting_model.pkl # Saved trained model
-├─ 📄 dataR2.csv                  # Dataset used for training
-├─ 📝 requirements.txt            # Python dependencies
-├─ 📊 ML.ipynb                    # ML notebook with Python code
-├─ 📂 templates
-│  └─ 🖥️ index.html               # Frontend form and result display
-├─ 📂 static
-│  ├─ 🖼️ logo.ico                 # Project logo
-│  └─ 🎨 style.css                # CSS styling
-└─ 📂 venv                        # Python virtual environment
+📁 BreastCancerPrediction
+├─ 📁 backend
+│  ├─ 📝 main.py                     # Train model, cross-validation, save model
+│  ├─ 📝 app.py                      # Flask app for frontend
+│  ├─ 💾 gradient_boosting_model.pkl # Saved trained model
+│  ├─ 📄 dataR2.csv                  # Dataset used for training
+│  ├─ 📝 requirements.txt            # Python dependencies
+│  ├─ 📊 ML.ipynb                    # ML notebook with Python code
+│  └─ 📂 venv                        # Python virtual environment
+│
+├─ 📁 frontend
+│  ├─ 📂 templates
+│  │  └─ 🖥️ index.html               # Frontend form and result display
+│  └─ 📂 static
+│     ├─ 🖼️ logo.ico                 # Project logo
+│     └─ 🎨 style.css                # CSS styling
+│
+└─ 📝 README.md                      # Project documentation
 
-📝 README.md                      # Project documentation
 
 ```
 
