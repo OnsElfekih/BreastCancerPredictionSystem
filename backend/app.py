@@ -1,10 +1,19 @@
 from flask import Flask, render_template, request
 import joblib
 import numpy as np
+import os
 
-app = Flask(__name__)
+# Chemins vers frontend
+frontend_path = os.path.join(os.path.dirname(__file__), "../frontend")
+template_folder = os.path.join(frontend_path, "templates")
+static_folder = os.path.join(frontend_path, "static")
 
-model = joblib.load("gradient_boosting_model.pkl")
+# Création de l'application Flask
+app = Flask(__name__, template_folder=template_folder, static_folder=static_folder)
+
+# Charger le modèle
+model_path = os.path.join(os.path.dirname(__file__), "gradient_boosting_model.pkl")
+model = joblib.load(model_path)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
