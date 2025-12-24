@@ -54,18 +54,20 @@ cd BreastCancerPredictionSystem
 ```
 
 2. Create a virtual environment
+```bash
   venv\Scripts\activate .venv\Scripts\Activate1
-
+```
 4. Install dependencies:
+   ```bash
    pip install -r requirements.txt
-   
-5. Usage:
+   ```
+6. Usage:
    - Run locally:
    cd backend
    python app.py
    - Online Deployement: https://breastcancerpredictionsystem-k643.onrender.com/
 
-6. Workflow:
+7. Workflow:
 - Load and inspect the dataset dataR2.csv.
 - Preprocess data and map target labels.
 - Split dataset into training and test sets.
@@ -73,6 +75,7 @@ cd BreastCancerPredictionSystem
 - Evaluate using accuracy, confusion matrix, and classification report.
 - Save the trained model for predictions.
 - Deploy the model using Flask with a web interface.
+
 
 
 
