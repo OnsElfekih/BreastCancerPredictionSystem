@@ -85,5 +85,11 @@ cd BreastCancerPredictionSystem
 IT Engineering Student — Business Intelligence  
 🔗 [LinkedIn](https://www.linkedin.com/in/ons-elfekih) · [Portfolio](https://portfolio-elfekih-ons.vercel.app/)
 
+---
+
+## 📄 License
+
+This project is for academic and portfolio purposes.
+
 
 
